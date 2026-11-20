@@ -22,5 +22,8 @@ SCENARIOS = [
         Elevator("A", 6, "up", 130, (8,)),
         Elevator("B", 4, "down", 520, (1,)),
     ), Request(5, "down")),
+    Scenario("S6 Equal-distance idle cars", (
+        Elevator("A", 1, "idle", 455),
+        Elevator("B", 3, "idle", 0),
+    ), Request(2, "up")),
 ]
-# S6 scenario : A idle at floor 1 with load_kg=455; B idle at floor 3 with load_kg=0; request from floor 2 going up.
